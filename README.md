@@ -8,11 +8,11 @@
 
 ## What is Reckoner?
 
-Reckoner is a web-based tool that calculates your company's financial runway—the number of months your business can operate before it runs out of money. By simply inputting your current cash balance, monthly revenue, and monthly expenses, you get an immediate, clear, and accurate picture of your financial health.
+Reckoner is a web based tool that calculates your company's financial runway the number of months your business can operate before it runs out of money. By simply inputting your current cash balance, monthly revenue, and monthly expenses, you get an immediate, clear, and accurate picture of your financial health.
 
 ## Why Reckoner?
 
-In the fast-paced world of startups, financial clarity is crucial, but the tools to achieve it are often overly complex or expensive. Founders need quick, reliable answers to fundamental questions like, "How long can we last with the money we have?"
+In the fast paced world of startups, financial clarity is crucial, but the tools to achieve it are often overly complex or expensive. Founders need quick, reliable answers to fundamental questions like, "How long can we last with the money we have?"
 
 Reckoner was built to solve this problem by providing:
 
@@ -40,7 +40,7 @@ Next, it uses your net burn to calculate your **financial runway**—the number 
 `Runway (in months) = Total Cash Balance / Net Monthly Burn`
 
 - If you are profitable (i.e., your burn is negative), your runway is considered infinite because you are not losing money.
-- Reckoner instantly computes these values and presents them in a clear, easy-to-understand format.
+- Reckoner instantly computes these values and presents them in a clear, easy to understand format.
 
 ## Key Features
 
@@ -48,14 +48,14 @@ Next, it uses your net burn to calculate your **financial runway**—the number 
 - **Visual Burn Down Chart:** Visualize your cash flow over the coming months.
 - **Secure & Private:** All calculations are performed in your browser. Your financial data is never stored or sent to a server.
 - **Responsive Design:** Access the calculator on any device, desktop or mobile.
-- **Professional PDF Export:** Download a well-formatted PDF report of your runway to share with stakeholders.
+- **Professional PDF Export:** Download a well formatted PDF report of your runway to share with stakeholders.
 
 ## Difference from Other Tools
 
 While many financial tools exist, Reckoner stands out by focusing on one thing and doing it exceptionally well.
 
-- **Zero Friction:** No sign-up, no credit card, no bloated features. Just a calculator that works.
-- **Founder-Focused:** Designed with the specific needs of early-stage startups in mind.
+- **Zero Friction:** No sign up, no credit card, no bloated features. Just a calculator that works.
+- **Founder-Focused:** Designed with the specific needs of early stage startups in mind.
 - **Educational:** Includes a helpful FAQ section to clarify common financial terms like "burn rate."
 
 ## Tech Stack
