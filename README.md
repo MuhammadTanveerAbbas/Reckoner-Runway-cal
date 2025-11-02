@@ -1,19 +1,10 @@
-<h1 align="center">Reckoner 🧮</h1>
-<p align="center">Calculate your startup's financial runway in seconds</p>
+<h1 align="center">Reckoner 🧮 Calculate Financial runway ✨</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License" />
-</p>
-
-<p align="center">
-  <a href="#-live-demo">Live Demo</a> •
-  <a href="#-what-is-this">About</a> •
-  <a href="#-features">Features</a> •
-  <a href="#-getting-started">Getting Started</a> •
-  <a href="#-tech-stack">Tech Stack</a>
 </p>
 
 ---
