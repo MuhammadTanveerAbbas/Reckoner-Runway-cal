@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { HomePage } from "@/components/pages/home-page";
-import { ToolTransition } from "@/components/survival/tool-transition";
 import { InputForm } from "@/components/survival/input-form";
 import { LoadingStage } from "@/components/survival/loading-stage";
 import { ResultsDashboard } from "@/components/survival/results-dashboard";
@@ -14,18 +12,10 @@ import {
 import { generateAIRecommendations } from "@/lib/ai-engine";
 import { Header } from "@/components/pages/header";
 
-export default function Home() {
-  const [view, setView] = useState<"landing" | "transition" | "tool">(
-    "landing"
-  );
+export default function ToolPage() {
   const [stage, setStage] = useState<"input" | "loading" | "results">("input");
   const [metrics, setMetrics] = useState<FinancialMetrics | null>(null);
   const [savedInputs, setSavedInputs] = useState<FinancialInputs | null>(null);
-
-  const handleCTAClick = () => {
-    setView("transition");
-    setTimeout(() => setView("tool"), 2500);
-  };
 
   const handleSubmit = async (data: any) => {
     setStage("loading");
@@ -35,16 +25,12 @@ export default function Home() {
       expenses: parseFloat(data.expenses) || 0,
       savings: parseFloat(data.savings) || 0,
       growth: parseFloat(data.growth) || 0,
-      industry: data.industry || 'other',
-      currency: data.currency || 'USD',
+      teamSize: parseFloat(data.teamSize) || 0,
     };
 
     setSavedInputs(inputs);
 
-    // Calculate base metrics
     const baseMetrics = calculateFinancialMetrics(inputs);
-
-    // Generate AI recommendations (simulates API call)
     const aiRecommendations = await generateAIRecommendations(
       inputs,
       baseMetrics
@@ -64,22 +50,14 @@ export default function Home() {
     setMetrics(null);
   };
 
-  if (view === "landing") {
-    return <HomePage onCTAClick={handleCTAClick} />;
-  }
-
-  if (view === "transition") {
-    return <ToolTransition />;
-  }
-
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
+    <div className="flex min-h-screen w-full flex-col bg-background text-foreground transition-colors duration-300">
       <Header />
-      <main className="flex-1 flex flex-col items-center justify-center p-4">
+      <main className="flex-1 flex flex-col items-center justify-center p-2 sm:p-4 bg-black">
         {stage === "input" && (
           <>
-            <div className="text-center mb-8 max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <div className="text-center mb-6 sm:mb-8 max-w-2xl px-4">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                 Know Exactly How Long Your Startup Can Survive
               </h1>
             </div>

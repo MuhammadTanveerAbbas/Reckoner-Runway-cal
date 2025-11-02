@@ -30,7 +30,7 @@ const faqs = [
 
 export function FAQs() {
     return (
-        <AnimatedSection id="faq" className="w-full bg-secondary py-12 md:py-24 lg:py-32">
+        <AnimatedSection id="faq" className="w-full py-12 md:py-24 lg:py-32">
             <div className="container mx-auto px-4 md:px-6">
                  <div className="mb-12 text-center">
                     <HelpCircle className="mx-auto h-12 w-12 text-primary" />
@@ -38,7 +38,7 @@ export function FAQs() {
                     <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">Have questions? We have answers.</p>
                 </div>
                 <div className="mx-auto max-w-3xl">
-                    <Accordion type="single" collapsible className="w-full">
+                    <Accordion type="single" collapsible className="w-full space-y-4">
                        {faqs.map(faq => (
                          <AccordionItem key={faq.question} value={faq.question}>
                             <AccordionTrigger className="text-lg text-left hover:no-underline">{faq.question}</AccordionTrigger>

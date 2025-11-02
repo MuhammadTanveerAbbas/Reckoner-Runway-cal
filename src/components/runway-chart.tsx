@@ -14,19 +14,16 @@ import {
   ChartContainer,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import { useTheme } from "next-themes";
 
 interface RunwayChartProps {
     data: { month: string; cash: number }[];
 }
 
 export function RunwayChart({ data }: RunwayChartProps) {
-  const { theme } = useTheme();
-  
   const chartConfig = {
     cash: {
       label: "Cash Balance",
-      color: theme === 'dark' ? "hsl(var(--primary))" : "hsl(var(--primary))",
+      color: "hsl(var(--primary))",
     },
   }
 
@@ -36,10 +33,10 @@ export function RunwayChart({ data }: RunwayChartProps) {
         accessibilityLayer
         data={data}
         margin={{
-          left: 12,
-          right: 12,
-          top: 10,
-          bottom: 10,
+          left: 5,
+          right: 5,
+          top: 5,
+          bottom: 5,
         }}
       >
         <CartesianGrid vertical={false} strokeDasharray="3 3" />
@@ -47,14 +44,16 @@ export function RunwayChart({ data }: RunwayChartProps) {
           dataKey="month"
           tickLine={false}
           axisLine={false}
-          tickMargin={8}
-          tickFormatter={(value) => value.slice(0, 3)}
+          tickMargin={2}
+          tick={{ fontSize: 10 }}
+          tickFormatter={(value) => value.slice(0, 2)}
         />
         <YAxis 
             tickLine={false}
             axisLine={false}
-            tickMargin={8}
-            tickFormatter={(value) => `$${Number(value).toLocaleString()}`}
+            tickMargin={2}
+            tick={{ fontSize: 10 }}
+            tickFormatter={(value) => `$${(Number(value) / 1000).toFixed(0)}k`}
         />
         <Tooltip
           cursor={false}

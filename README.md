@@ -1,104 +1,118 @@
 <h1 align="center">Reckoner 🧮</h1>
+<p align="center">Calculate your startup's financial runway in seconds</p>
+
 <p align="center">
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License" />
 </p>
 
-## What is Reckoner?
+<p align="center">
+  <a href="#-live-demo">Live Demo</a> •
+  <a href="#-what-is-this">About</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-getting-started">Getting Started</a> •
+  <a href="#-tech-stack">Tech Stack</a>
+</p>
 
-Reckoner is a web based tool that calculates your company's financial runway the number of months your business can operate before it runs out of money. By simply inputting your current cash balance, monthly revenue, and monthly expenses, you get an immediate, clear, and accurate picture of your financial health.
+---
 
-## Why Reckoner?
+## 🚀 Live Demo
 
-In the fast paced world of startups, financial clarity is crucial, but the tools to achieve it are often overly complex or expensive. Founders need quick, reliable answers to fundamental questions like, "How long can we last with the money we have?"
+**[Try Reckoner →](https://reckoner-cal.vercel.app)**
 
-Reckoner was built to solve this problem by providing:
+## 💡 What is This?
 
-- **Simplicity:** No more wrestling with complicated spreadsheet formulas.
-- **Speed:** Get the insights you need in seconds, not hours.
-- **Accessibility:** A completely free tool, available to any founder, anywhere.
+A simple web calculator that tells you how many months your startup can survive with its current cash. Input your cash balance, monthly revenue, and expenses—get your runway instantly.
 
-## How It Works
+No spreadsheets. No signup. No BS.
 
-The calculation is straightforward but powerful. Reckoner uses two key formulas to determine your financial runway:
+## 🎯 Why I Built This
 
-### 1. Net Monthly Burn Rate
+I got tired of opening Excel every time I needed to check runway. Most financial tools are either too complex or cost money. This does one thing well: calculate runway fast.
 
-First, it calculates your **net monthly burn rate**, which is the amount of money your company loses each month.
+## 📐 How It Works
 
-`Net Monthly Burn = Monthly Expenses - Monthly Revenue`
+Two simple formulas:
 
-- If your expenses are higher than your revenue, you have a "burn."
-- If your revenue is higher than your expenses, you are "profitable," and your burn is negative.
+**1. Net Monthly Burn**
+```
+Burn = Monthly Expenses - Monthly Revenue
+```
 
-### 2. Financial Runway
+**2. Runway**
+```
+Runway (months) = Cash Balance / Net Burn
+```
 
-Next, it uses your net burn to calculate your **financial runway**—the number of months you can continue operating before your cash runs out.
+If you're profitable (revenue > expenses), your runway is infinite ♾️
 
-`Runway (in months) = Total Cash Balance / Net Monthly Burn`
+## ✨ Features
 
-- If you are profitable (i.e., your burn is negative), your runway is considered infinite because you are not losing money.
-- Reckoner instantly computes these values and presents them in a clear, easy to understand format.
+- ⚡ **Instant calculation** - No waiting, no loading
+- 📊 **Visual chart** - See your cash over 24 months
+- 🔒 **Private** - Everything runs in your browser
+- 📱 **Mobile-friendly** - Works everywhere
+- 💾 **Save scenarios** - Compare different projections
+- 📄 **Export reports** - CSV and PDF downloads
+- ⌨️ **Keyboard shortcuts** - Press Enter to calculate
+- 📈 **Growth modeling** - Add revenue/expense growth rates
+- 🎯 **Break-even point** - See when you'll be profitable
 
-## Key Features
+## 🛠️ Tech Stack
 
-- **Instant Runway Calculation:** Get an immediate and accurate projection.
-- **Visual Burn Down Chart:** Visualize your cash flow over the coming months.
-- **Secure & Private:** All calculations are performed in your browser. Your financial data is never stored or sent to a server.
-- **Responsive Design:** Access the calculator on any device, desktop or mobile.
-- **Professional PDF Export:** Download a well formatted PDF report of your runway to share with stakeholders.
+- [Next.js 14](https://nextjs.org/) - React framework with App Router
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [ShadCN UI](https://ui.shadcn.com/) - Component library
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Recharts](https://recharts.org/) - Charts
+- [jsPDF](https://github.com/parallax/jsPDF) - PDF export
 
-## Difference from Other Tools
-
-While many financial tools exist, Reckoner stands out by focusing on one thing and doing it exceptionally well.
-
-- **Zero Friction:** No sign up, no credit card, no bloated features. Just a calculator that works.
-- **Founder-Focused:** Designed with the specific needs of early stage startups in mind.
-- **Educational:** Includes a helpful FAQ section to clarify common financial terms like "burn rate."
-
-## Tech Stack
-
-This project is built with a modern, performant, and scalable tech stack:
-
-- **Framework:** [Next.js](https://nextjs.org/) (with App Router)
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **UI Components:** [ShadCN UI](https://ui.shadcn.com/)
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **PDF Generation:** [jsPDF](https://github.com/parallax/jsPDF) & [html2canvas](https://html2canvas.hertzen.com/)
-
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
+## 🚀 Getting Started
 
 ### Prerequisites
 
-You'll need [Node.js](https://nodejs.org/en/) (version 18 or later) and npm installed on your machine.
+- [Node.js](https://nodejs.org/) 18+
+- npm or yarn
 
-### Installation & Running
+### Installation
 
-1.  Clone the repository:
-    ```sh
-    git clone https://github.com/muhammadtanveerabbas/Reckoner-Runway-cal.git
-    ```
-2.  Navigate to the project directory:
-    ```sh
-    cd Reckoner-Runway-cal
-    ```
-3.  Install NPM packages:
-    ```sh
-    npm install
-    ```
-4.  Run the development server:
-    `sh
+```bash
+git clone https://github.com/muhammadtanveerabbas/Reckoner-Runway-cal.git
+cd Reckoner-Runway-cal
+npm install
 npm run dev
-`
-    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
 
-- [LinkedIn](https://linkedin.com/in/muhammadtanveerabbas)
-- [GitHub](https://github.com/muhammadtanveerabbas)
-- [Twitter / X](https://x.com/m_tanveerabbas)
+Open [http://localhost:3000](http://localhost:3000)
 
-Made with ❤️ by **Muhammad Tanveer Abbas**.
+### Scripts
+
+```bash
+npm run dev        # Development server
+npm run build      # Production build
+npm run start      # Production server
+npm run lint       # Lint code
+npm run typecheck  # Type checking
+npm test           # Run tests
+```
+
+## 🤝 Contributing
+
+Pull requests welcome! For major changes, open an issue first.
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE)
+
+## 👨‍💻 Author
+
+**Muhammad Tanveer Abbas**
+
+🌐 [Portfolio](https://muhammadtanveerabbas.vercel.app/) • 💼 [LinkedIn](https://linkedin.com/in/muhammadtanveerabbas) • 🐙 [GitHub](https://github.com/muhammadtanveerabbas) • 🐦 [Twitter](https://x.com/m_tanveerabbas)
+
+---
+
+<p align="center">Made for founders who need answers fast 🚀</p>

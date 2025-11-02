@@ -1,20 +1,35 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Reckoner",
+  title: "Reckoner - Financial Runway Calculator for Startups",
   description:
-    "A free, simple, and instant runway calculator for founders, startups, and SMBs. Understand your financial runway in seconds with this essential SaaS tool.",
+    "Calculate your startup's financial runway in seconds. Free, instant burn rate analysis with growth projections. Know exactly how long your cash will last.",
   keywords: [
     "runway calculator",
     "startup finance",
-    "SaaS tool",
-    "burn rate",
+    "burn rate calculator",
     "cash runway",
     "financial planning",
+    "startup metrics",
   ],
+  authors: [{ name: "Muhammad Tanveer Abbas" }],
+  openGraph: {
+    title: "Reckoner - Financial Runway Calculator",
+    description: "Calculate your startup's financial runway in seconds. Free, instant, and private.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reckoner - Financial Runway Calculator",
+    description: "Calculate your startup's financial runway in seconds.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -32,21 +47,13 @@ export default function RootLayout({
           crossOrigin=""
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/fevicon.png" />
       </head>
       <body className="font-body antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-          <Toaster />
-        </ThemeProvider>
+        {children}
+        <Toaster />
       </body>
     </html>
   );
