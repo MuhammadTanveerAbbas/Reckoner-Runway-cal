@@ -9,13 +9,9 @@
 
 ---
 
-## 🚀 Live Demo
-
-**[Try Reckoner →](https://reckoner-cal.vercel.app)**
-
 ## 💡 What is This?
 
-A simple web calculator that tells you how many months your startup can survive with its current cash. Input your cash balance, monthly revenue, and expenses—get your runway instantly.
+A simple web calculator that tells you how many months your startup can survive with its current cash. Input your cash balance, monthly revenue, and expenses get your runway instantly.
 
 No spreadsheets. No signup. No BS.
 
@@ -90,20 +86,22 @@ npm run typecheck  # Type checking
 npm test           # Run tests
 ```
 
-## 🤝 Contributing
+<div align="center">
 
-Pull requests welcome! For major changes, open an issue first.
+# 👨‍💻 Muhammad Tanveer Abbas
 
-## 📄 License
+**SaaS MVP Developer** • **AI Integration Expert** • **Full Stack Developer**
 
-MIT License - see [LICENSE](LICENSE)
+⚡ Specialized in Building Production Ready SaaS MVPs for founders in Weeks
 
-## 👨‍💻 Author
+**Next.js • TypeScript • Firebase • AI • Tailwind CSS**
 
-**Muhammad Tanveer Abbas**
-
-🌐 [Portfolio](https://muhammadtanveerabbas.vercel.app/) • 💼 [LinkedIn](https://linkedin.com/in/muhammadtanveerabbas) • 🐙 [GitHub](https://github.com/muhammadtanveerabbas) • 🐦 [Twitter](https://x.com/m_tanveerabbas)
+💼 **[View Portfolio](https://muhammadtanveerabbas.vercel.app/)**
 
 ---
 
-<p align="center">Made for founders who need answers fast 🚀</p>
+⭐ **Star this repo** if you find it inspiring!
+
+Built with ❤️ to showcase professional SaaS MVP development.
+
+</div>
